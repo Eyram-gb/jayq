@@ -89,7 +89,7 @@ const Yellow = () => {
           cement, and in recollections of minds and materials that may recall
           its traces. Robin Riskin Independent Curato
         </p>
-        <div className="mt-6 text-gray-500">
+        {/* <div className="mt-6 text-gray-500">
           <p className="font-bold text-black">The Approach</p>
           <p className="text-gray-700">A workStream of 5 projects:</p>
           <ul className="list-disc">
@@ -99,7 +99,7 @@ const Yellow = () => {
             <li>Keti Koti Symposium</li>
             <li>Outreach and promotion</li>
           </ul>
-        </div>
+        </div> */}
         <hr className="my-8" />
         <Masonry
           breakpointCols={breakpointColumnsObj}

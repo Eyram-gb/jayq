@@ -79,18 +79,20 @@ const Travel = () => {
         </p>
         <br />
         <p className="text-gray-500">
-         <span className="text-black">Curators:</span> Jelle Bouwhuis and Kerstin Winking (Stedelijk Museum Bureau
-          Amsterdam) Kofi Setordji and Odile Tevie (Nubuke Foundation) Time,
-          Trade & Travel has been made possible in part by contributions from
-          the Mondrian Fund, the Amsterdam Fund for the Arts, HIVOS and SNS
-          REAAL Fund The exhibition is part of Project &lsquo;1975&rsquo; of
-          Stedelijk Museum Bureau Amsterdam.
+          <span className="text-black">Curators:</span> Jelle Bouwhuis and
+          Kerstin Winking (Stedelijk Museum Bureau Amsterdam) Kofi Setordji and
+          Odile Tevie (Nubuke Foundation) Time, Trade & Travel has been made
+          possible in part by contributions from the Mondrian Fund, the
+          Amsterdam Fund for the Arts, HIVOS and SNS REAAL Fund The exhibition
+          is part of Project &lsquo;1975&rsquo; of Stedelijk Museum Bureau
+          Amsterdam.
         </p>
-        <br /><br />
+        <br />
+        <br />
         <p className="text-gray-500">
           Bernard Akoi-Jackson, Dorothy Akpene Amenuke, Serge Clottey, Zachary
           Formwalt, Iris Kensmil, Aukje Koks, Navid Nuur, Jeremiah Quarshie,
-          kari-kacha seidâ€™ou and Katarina Zdjelar.
+          Karî&apos;kachä Seid&apos;ou and Katarina Zdjelar.
           <br />
           25 August - 21 October 2012
         </p>
