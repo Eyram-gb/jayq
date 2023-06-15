@@ -4,7 +4,7 @@ const ImageModal = ({ imageUrl, onClose }) => {
   return (
     <div className="fixed inset-0 flex items-center justify-center z-50">
       <div className="relative z-[999]">
-        <img src={imageUrl} alt="artwork" className="w-full rounded h-[80vh]" />
+        <img src={imageUrl} alt="artwork" className="w-auto rounded h-[80vh]" />
         <button
           className="absolute top-4 right-4 text-white hover:text-gray-300 cursor-pointer"
           onClick={onClose}
