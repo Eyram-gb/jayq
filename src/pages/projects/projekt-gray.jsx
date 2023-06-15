@@ -1,25 +1,24 @@
+import React, { useState } from "react";
+import Masonry from "react-masonry-css";
+import ImageModal from "../../components/ImageModal";
+import Layout from "../../components/Layout";
 
-import React, { useState } from 'react'
-import Masonry from 'react-masonry-css'
-import ImageModal from '../../components/ImageModal'
-import Layout from '../../components/Layout'
-
-const imageNames = ['IMG_7555', 'IMG_7557']
+const imageNames = ["IMG_7555", "IMG_7557"];
 
 const ProjektGray = () => {
   const breakpointColumnsObj = {
     default: 3,
-  }
+  };
 
-  const [selectedImage, setSelectedImage] = useState(null)
+  const [selectedImage, setSelectedImage] = useState(null);
 
   const openModal = (imageName) => {
-    setSelectedImage(imageName)
-  }
+    setSelectedImage(imageName);
+  };
 
   const closeModal = () => {
-    setSelectedImage(null)
-  }
+    setSelectedImage(null);
+  };
 
   return (
     <Layout>
@@ -80,7 +79,7 @@ const ProjektGray = () => {
                   {item}
                 </p> */}
               </div>
-            )
+            );
           })}
         </Masonry>
       </div>
@@ -91,7 +90,7 @@ const ProjektGray = () => {
         />
       )}
     </Layout>
-  )
-}
+  );
+};
 
 export default ProjektGray

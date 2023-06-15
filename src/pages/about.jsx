@@ -1,6 +1,5 @@
-
-import React from 'react'
-import Layout from '../components/Layout'
+import React from "react";
+import Layout from "../components/Layout";
 
 const About = () => {
   return (
@@ -113,7 +112,7 @@ const About = () => {
               <p>2013</p>
               <li>Muses, Goethe Institut, Accra</li>
               <li>
-                {' '}
+                {" "}
                 The &lsquo;Sabi Yu Rutu&rsquo; project, Paramaribo, Suriname
               </li>
               <li> Kaleidoscope, La Villa Boutique, Accra, Ghana 2012</li>
@@ -179,7 +178,7 @@ const About = () => {
         </div>
       </div>
     </Layout>
-  )
-}
+  );
+};
 
-export default About
+export default About;

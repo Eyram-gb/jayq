@@ -1,25 +1,24 @@
+import React, { useState } from "react";
+import Masonry from "react-masonry-css";
+import ImageModal from "../../components/ImageModal";
+import Layout from "../../components/Layout";
 
-import React, { useState } from 'react'
-import Masonry from 'react-masonry-css'
-import ImageModal from '../../components/ImageModal'
-import Layout from '../../components/Layout'
-
-const imageNames = ['IMG_8842', 'YI4A1602', 'YI4A1665', 'YI4A2050', 'YI4A2168']
+const imageNames = ["IMG_8842", "YI4A1602", "YI4A1665", "YI4A2050", "YI4A2168"];
 
 const MansaMusa = () => {
   const breakpointColumnsObj = {
     default: 3,
-  }
+  };
 
-  const [selectedImage, setSelectedImage] = useState(null)
+  const [selectedImage, setSelectedImage] = useState(null);
 
   const openModal = (imageName) => {
-    setSelectedImage(imageName)
-  }
+    setSelectedImage(imageName);
+  };
 
   const closeModal = () => {
-    setSelectedImage(null)
-  }
+    setSelectedImage(null);
+  };
 
   return (
     <Layout>
@@ -45,7 +44,7 @@ const MansaMusa = () => {
                   {item}
                 </p> */}
               </div>
-            )
+            );
           })}
         </Masonry>
       </div>
@@ -56,7 +55,7 @@ const MansaMusa = () => {
         />
       )}
     </Layout>
-  )
-}
+  );
+};
 
 export default MansaMusa

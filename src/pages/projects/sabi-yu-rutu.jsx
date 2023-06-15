@@ -1,30 +1,29 @@
-
-import React, { useState } from 'react'
-import Masonry from 'react-masonry-css'
-import ImageModal from '../../components/ImageModal'
-import Layout from '../../components/Layout'
+import React, { useState } from "react";
+import Masonry from "react-masonry-css";
+import ImageModal from "../../components/ImageModal";
+import Layout from "../../components/Layout";
 
 const imageNames = [
-  '1040157_10200596751055932_783215139_o',
-  'IMG_2122',
-  'IMG_2123',
-  'PhotoCrop_2013-11-30_07-31-13-PM',
-]
+  "1040157_10200596751055932_783215139_o",
+  "IMG_2122",
+  "IMG_2123",
+  "PhotoCrop_2013-11-30_07-31-13-PM",
+];
 
 const SabiYuRutu = () => {
   const breakpointColumnsObj = {
     default: 3,
-  }
+  };
 
-  const [selectedImage, setSelectedImage] = useState(null)
+  const [selectedImage, setSelectedImage] = useState(null);
 
   const openModal = (imageName) => {
-    setSelectedImage(imageName)
-  }
+    setSelectedImage(imageName);
+  };
 
   const closeModal = () => {
-    setSelectedImage(null)
-  }
+    setSelectedImage(null);
+  };
 
   return (
     <Layout>
@@ -50,9 +49,9 @@ const SabiYuRutu = () => {
           Série A.
           <br />
           <br />
-          Throughout the world, most people are placed (or place themselves)
-          into broad and general categories of identity, often based on
-          nationality and a visible ethnicity. However, all of us have a far
+           Throughout the world, most people are placed (or place
+          themselves) into broad and general categories of identity, often based
+          on nationality and a visible ethnicity. However, all of us have a far
           more complex history and self-understanding that can and should be
           celebrated. For many Afro-Surinamese, whether living in Suriname, the
           Netherlands, or elsewhere, limited access to their cultural history
@@ -87,7 +86,7 @@ const SabiYuRutu = () => {
                   {item}
                 </p> */}
               </div>
-            )
+            );
           })}
         </Masonry>
       </div>
@@ -98,7 +97,7 @@ const SabiYuRutu = () => {
         />
       )}
     </Layout>
-  )
-}
+  );
+};
 
-export default SabiYuRutu
+export default SabiYuRutu;
