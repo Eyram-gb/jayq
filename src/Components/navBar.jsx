@@ -1,71 +1,74 @@
-import React, { useState } from "react";
-import Link from "next/link";
-import { useRouter } from "next/router";
+import React, { useState } from 'react'
+import Link from 'next/link'
+import { useRouter } from 'next/router'
 
 const navList = [
   {
-    name: "Home",
-    href: "/",
+    name: 'Home',
+    href: '/',
   },
   {
-    name: "Portfolio",
-    href: "/portfolio",
+    name: 'Portfolio',
+    href: '/portfolio',
     dropdownItems: [
-      { name: "Paintings", href: "/portfolio/paintings" },
-      { name: "Others", href: "/portfolio/others" },
-      { name: "Digital", href: "/portfolio/digital" },
+      { name: 'Paintings', href: '/portfolio/paintings' },
+      { name: 'Others', href: '/portfolio/others' },
+      { name: 'Digital', href: '/portfolio/digital' },
     ],
   },
   {
-    name: "Exhibitions",
-    href: "/exhibitions",
+    name: 'Exhibitions',
+    href: '/exhibitions',
     dropdownItems: [
-      { name: "Art Fairs", href: "/exhibitions/artFairs" },
-      { name: "Daughters of Noah", href: "/exhibitions/daughters-of-noah" },
-      { name: "Muses", href: "/exhibitions/muses" },
-      { name: "Material Insanity", href: "/exhibitions/material-insanity" },
-      { name: "Time trade and Travel", href: "/exhibitions/travel" },
+      { name: 'Art Fairs', href: '/exhibitions/artFairs' },
+      { name: 'Daughters of Noah', href: '/exhibitions/daughters-of-noah' },
+      { name: 'Muses', href: '/exhibitions/muses' },
+      { name: 'Material Insanity', href: '/exhibitions/material-insanity' },
+      { name: 'Time trade and Travel', href: '/exhibitions/travel' },
     ],
   },
   {
-    name: "Projects",
-    href: "/projects",
+    name: 'Projects',
+    href: '/projects',
     dropdownItems: [
-      { name: "Mansa Musa Project", href: "/projects/mansa-musa" },
-      { name: "Projekt Gray", href: "/projects/projekt-gray" },
-      { name: "Sabi Yu Rutu", href: "/projects/sabi-yu-rutu" },
-      { name: "Yellow is the Colour of Water", href: "/projects/yellow-is-the-colour-of-water" },
+      { name: 'Mansa Musa Project', href: '/projects/mansa-musa' },
+      { name: 'Projekt Gray', href: '/projects/projekt-gray' },
+      { name: 'Sabi Yu Rutu', href: '/projects/sabi-yu-rutu' },
+      {
+        name: 'Yellow is the Colour of Water',
+        href: '/projects/yellow-is-the-colour-of-water',
+      },
     ],
   },
   {
-    name: "About",
-    href: "/about",
+    name: 'About',
+    href: '/about',
   },
   {
-    name: "Contact",
-    href: "/contact",
+    name: 'Contact',
+    href: '/contact',
   },
-];
+]
 
 const NavBar = () => {
-  const router = useRouter();
-  const [showDropdown, setShowDropdown] = useState(false);
-  const [activeDropdownIndex, setActiveDropdownIndex] = useState(null);
+  const router = useRouter()
+  const [showDropdown, setShowDropdown] = useState(false)
+  const [activeDropdownIndex, setActiveDropdownIndex] = useState(null)
 
   const handleDropdownToggle = (index) => {
     if (activeDropdownIndex === index) {
-      setActiveDropdownIndex(null);
-      setShowDropdown(false);
+      setActiveDropdownIndex(null)
+      setShowDropdown(false)
     } else {
-      setActiveDropdownIndex(index);
-      setShowDropdown(true);
+      setActiveDropdownIndex(index)
+      setShowDropdown(true)
     }
-  };
+  }
 
   const handleDropdownClose = () => {
-    setActiveDropdownIndex(null);
-    setShowDropdown(false);
-  };
+    setActiveDropdownIndex(null)
+    setShowDropdown(false)
+  }
 
   return (
     <nav
@@ -81,18 +84,18 @@ const NavBar = () => {
       </Link>
       <ul className="flex gap-x-12">
         {navList.map((item, index) => {
-          const isDropdownActive = activeDropdownIndex === index;
-          const isCurrentRoute = router.pathname == item.href;
+          const isDropdownActive = activeDropdownIndex === index
+          const isCurrentRoute = router.pathname == item.href
 
           return (
             <li
               key={item.name}
               className={`relative ${
-                isCurrentRoute ? "underline font-semibold" : "hover:underline"
+                isCurrentRoute ? 'underline font-semibold' : 'hover:underline'
               } underline-offset-4 uppercase tracking-widest font-extralight text-sm`}
               onMouseEnter={() => handleDropdownToggle(index)}
             >
-              <Link href={isDropdownActive ? "#" : item.href}>
+              <Link href={isDropdownActive ? '#' : item.href}>
                 {/* Use "#" as the href when the dropdown is active */}
                 {item.name}
               </Link>
@@ -112,11 +115,11 @@ const NavBar = () => {
                 </ul>
               )}
             </li>
-          );
+          )
         })}
       </ul>
     </nav>
-  );
-};
+  )
+}
 
-export default NavBar;
+export default NavBar
