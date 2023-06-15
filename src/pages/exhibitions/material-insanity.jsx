@@ -1,29 +1,28 @@
-
-import React, { useState } from 'react'
-import Masonry from 'react-masonry-css'
-import ImageModal from '../../components/ImageModal'
-import Layout from '../../components/Layout'
+import React, { useState } from "react";
+import Masonry from "react-masonry-css";
+import ImageModal from "../../components/ImageModal";
+import Layout from "../../components/Layout";
 
 const imageNames = [
-  'Macaal MATERIAL INSANITY- © Saad Alami 16',
-  'Macaal MATERIAL INSANITY- © Saad Alami 20',
-  'Material Insanity, MACAAL, © Zakaria Boumliha-18',
-]
+  "Macaal MATERIAL INSANITY- © Saad Alami",
+  "Macaal MATERIAL INSANITY- ©  Saad Alami",
+  "Material Insanity, MACAAL, © Zakaria Boumliha",
+];
 
 const MaterialInsanity = () => {
   const breakpointColumnsObj = {
     default: 2,
-  }
+  };
 
-  const [selectedImage, setSelectedImage] = useState(null)
+  const [selectedImage, setSelectedImage] = useState(null);
 
   const openModal = (imageName) => {
-    setSelectedImage(imageName)
-  }
+    setSelectedImage(imageName);
+  };
 
   const closeModal = () => {
-    setSelectedImage(null)
-  }
+    setSelectedImage(null);
+  };
 
   return (
     <Layout>
@@ -38,8 +37,7 @@ const MaterialInsanity = () => {
               Berrada & Janine Dieudji, MACAAL
             </p>
             <p>
-
-              <span className="text-black font-semibold">Scenography:</span>{' '}
+              <span className="text-black font-semibold">Scenography:</span>{" "}
               Zineb Andress Arraki
             </p>
           </div>
@@ -96,7 +94,7 @@ const MaterialInsanity = () => {
                   {item}
                 </p>
               </div>
-            )
+            );
           })}
         </Masonry>
       </div>
@@ -107,7 +105,7 @@ const MaterialInsanity = () => {
         />
       )}
     </Layout>
-  )
-}
+  );
+};
 
-export default MaterialInsanity
+export default MaterialInsanity;

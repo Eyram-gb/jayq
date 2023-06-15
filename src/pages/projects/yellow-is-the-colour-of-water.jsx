@@ -1,31 +1,30 @@
-
-import React, { useState } from 'react'
-import Masonry from 'react-masonry-css'
-import ImageModal from '../../components/ImageModal'
-import Layout from '../../components/Layout'
+import React, { useState } from "react";
+import Masonry from "react-masonry-css";
+import ImageModal from "../../components/ImageModal";
+import Layout from "../../components/Layout";
 
 const imageNames = [
-  '_FON4582',
-  '6tag_170616-100636',
-  'JQ-009',
-  'JQQ-024',
-  'QUASHIE - MAKOLA WOMAN-005(3)',
-]
+  "_FON4582",
+  "6tag_170616-100636",
+  "JQ-009",
+  "JQQ-024",
+  "QUASHIE - MAKOLA WOMAN-005(3)",
+];
 
 const Yellow = () => {
   const breakpointColumnsObj = {
     default: 3,
-  }
+  };
 
-  const [selectedImage, setSelectedImage] = useState(null)
+  const [selectedImage, setSelectedImage] = useState(null);
 
   const openModal = (imageName) => {
-    setSelectedImage(imageName)
-  }
+    setSelectedImage(imageName);
+  };
 
   const closeModal = () => {
-    setSelectedImage(null)
-  }
+    setSelectedImage(null);
+  };
 
   return (
     <Layout>
@@ -123,7 +122,7 @@ const Yellow = () => {
                   {item}
                 </p> */}
               </div>
-            )
+            );
           })}
         </Masonry>
       </div>
@@ -134,7 +133,7 @@ const Yellow = () => {
         />
       )}
     </Layout>
-  )
-}
+  );
+};
 
-export default Yellow
+export default Yellow;

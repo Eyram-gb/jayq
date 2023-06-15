@@ -1,17 +1,16 @@
-
-import React, { useState } from 'react'
-import Masonry from 'react-masonry-css'
-import ImageModal from '../../components/ImageModal'
-import Layout from '../../components/Layout'
+import React, { useState } from "react";
+import Masonry from "react-masonry-css";
+import ImageModal from "../../components/ImageModal";
+import Layout from "../../components/Layout";
 
 const imageNames = [
-  '32 muses _  Acrylic on Canvas _ 120cm by 160cm _  2013.',
-  'Nelson Mandela _ Acrylic on Linen _ 101cm by 127cm _ 2011.',
-  'Oprah _ Acrylic on Canvas _ 80cm by 100cm _  2013.',
-  'Michael Essien _ 2013 _ Acrylic on Canvas _ 80cm by 100cm',
-  'This is Who I Am _ 2012 _ Acrylic on Canvas _ 112cm by 140cm.',
-  'Shulammite _ Acrylic on Canvas _ 80cm by 100cm _ 2010.',
-]
+  "32 muses _  Acrylic on Canvas _ 120cm by 160cm _  2013.",
+  "Nelson Mandela _ Acrylic on Linen _ 101cm by 127cm _ 2011.",
+  "Oprah _ Acrylic on Canvas _ 80cm by 100cm _  2013.",
+  "Michael Essien _ 2013 _ Acrylic on Canvas _ 80cm by 100cm",
+  "This is Who I Am _ 2012 _ Acrylic on Canvas _ 112cm by 140cm.",
+  "Shulammite _ Acrylic on Canvas _ 80cm by 100cm _ 2010.",
+];
 
 const Others = () => {
   const breakpointColumnsObj = {
@@ -19,18 +18,17 @@ const Others = () => {
     900: 3,
     700: 2,
     500: 1,
+  };
 
-  }
-
-  const [selectedImage, setSelectedImage] = useState(null)
+  const [selectedImage, setSelectedImage] = useState(null);
 
   const openModal = (imageName) => {
-    setSelectedImage(imageName)
-  }
+    setSelectedImage(imageName);
+  };
 
   const closeModal = () => {
-    setSelectedImage(null)
-  }
+    setSelectedImage(null);
+  };
 
   return (
     <Layout>
@@ -67,7 +65,6 @@ const Others = () => {
         />
       )}
     </Layout>
-
-  )
-}
-export default Others
+  );
+};
+export default Others;
