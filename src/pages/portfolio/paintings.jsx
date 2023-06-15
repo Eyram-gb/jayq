@@ -5,7 +5,7 @@ import ImageModal from "../../components/ImageModal";
 
 const imageNames = [
   "Ama Asantewa _ Acrylic on canvas _ 120cm by 150cm _ 2022",
-  "IMG_2127",
+  // "IMG_2127",
   "Amoke  _ Acrylic on canvas _ 114cm by 114cm _ 2018",
   "Antie Dedei_ Yellow is the Colour of Water series _ Acrylic on canvas _ 152cm by 121cm _ 2016",
   "Christiana_ Yellow is the Colour of Water series _ Acrylic on canvas _ 152cm by 121cm _ 2016",

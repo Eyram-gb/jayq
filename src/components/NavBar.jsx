@@ -4,10 +4,6 @@ import { useRouter } from "next/router";
 
 const navList = [
   {
-    name: "Home",
-    href: "/",
-  },
-  {
     name: "Portfolio",
     href: "/portfolio",
     dropdownItems: [

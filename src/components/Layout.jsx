@@ -16,14 +16,14 @@ const Layout = ({ children }) => {
         <div className="flex items-center gap-x-3">
           <div className="">
             <a
-              href="https://instagram.com/mintgolddust"
+              href="https://instagram.com/jeremiahquarshie"
               target="_blank"
               rel="noreferrer"
             >
               <img src="/Subtract.svg" alt="ig" className="w-[18px]"></img>
             </a>
           </div>
-          <a href="mailto:someone@example.com">
+          <a href="mailto:jemkuash@yahoo.com">
             <img src="/icons8-email-48.png" className="w-[22px]"></img>
           </a>
         </div>
