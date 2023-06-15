@@ -33,48 +33,72 @@ const Yellow = () => {
           Yellow is the Colour of Water
         </h2>
         <p className="text-gray-500 text-justify">
-          The project stems from a painting that is part of the Time, Trade &
-          Travel exhibition by the Stedelijk Museum Bureau Amsterdam (SMBA) in
-          collaboration with the Nubuke Foundation in Accra, Ghana. Jeremiah
-          Quarshie created the painting to reflect the quest for identity,
-          merging the narrative of the 18th century enslaved Avantuur and the
-          Dutch-Surinamese soccer legend Clarence Seedorf. Around 1774,
-          four-year old Avantuur was kidnapped in West Africa, enslaved and
-          shipped to Suriname, South America. Avantuur is the African-born
-          ancestor of the Surinamese Muntslag clan. The narrative of the
-          Muntslag family is written across the portrait of the renowned
-          football player, Clarence Seedorf. Also born in Suriname (South
-          America), Seedorf exemplifies the quest for identity. Whether Dutch,
-          Surinamese, and/or African, he is now back on his continent of birth,
-          contracted by the Brazilian club Botafogo in the Campeonato Brasileiro
-          Série A.
+          Yellow is the Colour of Water is a multi-site exhibition project
+          staged by the artist Jeremiah Quarshie in collaboration with curator
+          Robin Riskin. Based out of Gallery 1957 at the Kempinski Hotel Gold
+          Coast City, Accra, the exhibition maps out to a network of
+          site-specific interventions, taking place at the Tema Station lorry
+          park and Kotoka International Airport. The body of work revolves
+          around questions of water and its flows through the city of Accra, as
+          embodied through the ubiquitous yellow “Kufuor” gallons used to store
+          and carry it. Harmonies and contradictions surrounding the vital
+          resource of water are produced through poetics of potential.
           <br />
+           A series
+          of paintings presents the gallons as thrones, and the common
+          characters who sit upon them as queens. The “Kufuor gallons” act as
+          object and backdrop alike, framing the scene and multi-functioning as
+          chairs, props, stage-set, and sometimes subject. Quarshie playfully
+          inverts portraiture from a hegemonic apparatus of the elite, to a tool
+          for raising critical questions about conditions of the masses. Though
+          the artist paints in a classical style, a tongue-in-cheek lightness
+          conjures a mood of humour, whose sweet veneer is followed by a sharp
+          kick.
           <br />
-          Throughout the world, most people are placed (or place themselves)
-          into broad and general categories of identity, often based on
-          nationality and a visible ethnicity. However, all of us have a far
-          more complex history and self-understanding that can and should be
-          celebrated. For many Afro-Surinamese, whether living in Suriname, the
-          Netherlands, or elsewhere, limited access to their cultural history
-          and little knowledge of their ancestry has robbed them of an
-          opportunity to assert full control over claims of their identity. With
-          a clear understanding of where they come from and how they arrived
-          where they are today, individuals are better able to create their own
-          identity narratives. Through a celebration of history, family,
-          ancestry, and the processes of discovery, we seek to support the
-          efforts of Afro-Surinamese (and all) people in the quest to answer the
-          question, “who am I?”
+           Coursing out to the town, fabricated pipes intervene in currents
+          of the city. They map out territory that has fluctuated between elite
+          colonial oases, zones of Nkrumahist independence, and speculative
+          corporate development projects. Like the women who pose as characters
+          in the paintings, whose lived realities span many roles, places change
+          from one thing into another, and sometimes back into themselves, but
+          are reformed and made anew.
+          <br />
+           Curatorially, the exhibition aims to take
+          painting as a political project, and the exhibition structure as
+          grounds for inquiry and interrogation. The show presents multiple
+          formats of painting, through not only pigments but material objects
+          (stretched canvas, mounted billboard, sculptural pipes). Interventions
+          take place over a series of sites—hotel gallery, public bus station,
+          international airport. The process involves individuals and groups
+          across various classes and sectors of labour. Audiences and players
+          are implicated as hosts, collaborators, and participants. The Gallery
+          that presents the project enters the picture as one of a constellation
+          of points, whose territory, history and politics are equally called
+          into question.
+          <br />
+           For the opening, the exhibition is temporarily
+          displaced from the Gallery space of 1957 to a “Galleria” construction
+          site across the way, where the skeleton of Kempinski&apos;s imminent
+          upscale shopping mall nears completion. Paintings and pipes inhabit
+          exposed concrete; hang from bare-beamed ducts and channels. A space on
+          the precipice of rebirth, its halls will soon be written over by the
+          circulation of other goods and conglomerates. Is the artist&apos;s work
+          complicit in these systems, or does a subtle critique lie within its
+          participation? Quarshie&apos;s evanescent occupation is cast as kind of
+          shadow, or an echo, whose presence will reverberate from seams of
+          cement, and in recollections of minds and materials that may recall
+          its traces. Robin Riskin Independent Curato
         </p>
         <div className="mt-6 text-gray-500">
-            <p className="font-bold text-black">The Approach</p>
-            <p className="text-gray-700">A workStream of 5 projects:</p>
-            <ul className="list-disc">
-                <li>Muntslag family research</li>
-                <li>Diaspora Art Project</li>
-                <li>My Family Tree research project</li>
-                <li>Keti Koti Symposium</li>
-                <li>Outreach and promotion</li>
-            </ul>
+          <p className="font-bold text-black">The Approach</p>
+          <p className="text-gray-700">A workStream of 5 projects:</p>
+          <ul className="list-disc">
+            <li>Muntslag family research</li>
+            <li>Diaspora Art Project</li>
+            <li>My Family Tree research project</li>
+            <li>Keti Koti Symposium</li>
+            <li>Outreach and promotion</li>
+          </ul>
         </div>
         <hr className="my-8" />
         <Masonry
@@ -89,14 +113,14 @@ const Yellow = () => {
                 key={item}
                 onClick={() => openModal(item)}
               >
-            <img
+                <img
                   src={`/Projects/Yellow is the Colour of Water/${item}.jpg`}
                   alt="artwork"
                   className=" w-full transition-all duration-150 group-hover:blur-[4px]"
                 />
-                <p className="inset-center w-full px-3 text-center font-extralight text-white transition-all duration-100 group-hover:visible">
+                {/* <p className="inset-center w-full px-3 text-center font-extralight text-white transition-all duration-100 group-hover:visible">
                   {item}
-                </p>
+                </p> */}
               </div>
             );
           })}

@@ -1,10 +1,6 @@
 {
   "compilerOptions": {
-    "lib": [
-      "dom",
-      "dom.iterable",
-      "esnext"
-    ],
+    "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
     "skipLibCheck": true,
     "strict": false,
@@ -21,9 +17,11 @@
   "include": [
     "next-env.d.ts",
     "**/*.ts",
-    "**/*.tsx"
-, "src/pages/exhibitions/material-insanity.jsx", "src/pages/portfolio/others.jsx", "src/pages/portfolio/paintings.jsx"  ],
-  "exclude": [
-    "node_modules"
-  ]
+    "**/*.tsx",
+    "src/pages/exhibitions/material-insanity.jsx",
+    "src/pages/portfolio/others.jsx",
+    "src/pages/portfolio/paintings.jsx",
+    "src/anyname/Layout.jsx"
+  ],
+  "exclude": ["node_modules"]
 }

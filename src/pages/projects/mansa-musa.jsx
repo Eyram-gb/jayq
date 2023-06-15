@@ -40,9 +40,9 @@ const MansaMusa = () => {
                   alt="artwork"
                   className=" w-full transition-all duration-150 group-hover:blur-[4px]"
                 />
-                <p className="inset-center w-full px-3 text-center font-extralight text-white transition-all duration-100 group-hover:visible">
+                {/* <p className="inset-center w-full px-3 text-center font-extralight text-white transition-all duration-100 group-hover:visible">
                   {item}
-                </p>
+                </p> */}
               </div>
             );
           })}

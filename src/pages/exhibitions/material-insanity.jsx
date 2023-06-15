@@ -1,12 +1,12 @@
 import React, { useState } from "react";
 import Masonry from "react-masonry-css";
-import ImageModal from "../../Components/ImageModal";
-import Layout from "../../Components/Layout";
+import ImageModal from "../../anyname/ImageModal";
+import Layout from "../../anyname/Layout";
 
 const imageNames = [
-  "Macaal MATERIAL INSANITY- © Saad Alami 16",
-  "Macaal MATERIAL INSANITY- © Saad Alami 20",
-  "Material Insanity, MACAAL, © Zakaria Boumliha-18",
+  "Macaal MATERIAL INSANITY- © Saad Alami",
+  "Macaal MATERIAL INSANITY- ©  Saad Alami",
+  "Material Insanity, MACAAL, © Zakaria Boumliha",
 ];
 
 const MaterialInsanity = () => {

@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import Masonry from 'react-masonry-css';
-import ImageModal from '../../Components/ImageModal';
-import Layout from '../../Components/Layout';
+import ImageModal from '../../anyname/ImageModal';
+import Layout from '../../anyname/Layout';
 
 const imageNames = [
   "32 muses _  Acrylic on Canvas _ 120cm by 160cm _  2013.",
