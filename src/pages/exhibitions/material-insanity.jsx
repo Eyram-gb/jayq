@@ -1,41 +1,44 @@
-import React, { useState } from "react";
-import Masonry from "react-masonry-css";
-import ImageModal from "../../Components/ImageModal";
-import Layout from "../../Components/Layout";
+import React, { useState } from 'react'
+import Masonry from 'react-masonry-css'
+import ImageModal from '../../components/ImageModal'
+import Layout from '../../components/Layout'
 
 const imageNames = [
-  "Macaal MATERIAL INSANITY- © Saad Alami 16",
-  "Macaal MATERIAL INSANITY- © Saad Alami 20",
-  "Material Insanity, MACAAL, © Zakaria Boumliha-18",
-];
+  'Macaal MATERIAL INSANITY- © Saad Alami 16',
+  'Macaal MATERIAL INSANITY- © Saad Alami 20',
+  'Material Insanity, MACAAL, © Zakaria Boumliha-18',
+]
 
 const MaterialInsanity = () => {
   const breakpointColumnsObj = {
     default: 2,
-  };
+  }
 
-  const [selectedImage, setSelectedImage] = useState(null);
+  const [selectedImage, setSelectedImage] = useState(null)
 
   const openModal = (imageName) => {
-    setSelectedImage(imageName);
-  };
+    setSelectedImage(imageName)
+  }
 
   const closeModal = () => {
-    setSelectedImage(null);
-  };
+    setSelectedImage(null)
+  }
 
   return (
     <Layout>
       <div className="px-10 py-10 w-full mx-auto text-gray-500">
         <div>
-          <h2 className="text-2xl font-bold text-black uppercase">Material Insanity</h2>
+          <h2 className="text-2xl font-bold text-black uppercase">
+            Material Insanity
+          </h2>
           <div className="my-4">
             <p>
-              <span className="text-black font-semibold">Curator:</span> Meriem Berrada &
-              Janine Dieudji, MACAAL
+              <span className="text-black font-semibold">Curator:</span> Meriem
+              Berrada & Janine Dieudji, MACAAL
             </p>
             <p>
-              <span className="text-black font-semibold">Scenography:</span> Zineb Andress Arraki
+              <span className="text-black font-semibold">Scenography:</span>{' '}
+              Zineb Andress Arraki
             </p>
           </div>
           <p className="mb-8">
@@ -91,7 +94,7 @@ const MaterialInsanity = () => {
                   {item}
                 </p>
               </div>
-            );
+            )
           })}
         </Masonry>
       </div>
@@ -102,7 +105,7 @@ const MaterialInsanity = () => {
         />
       )}
     </Layout>
-  );
-};
+  )
+}
 
-export default MaterialInsanity;
+export default MaterialInsanity

@@ -1,30 +1,30 @@
-import React, { useState } from "react";
-import Masonry from "react-masonry-css";
-import ImageModal from "../../Components/ImageModal";
-import Layout from "../../Components/Layout";
+import React, { useState } from 'react'
+import Masonry from 'react-masonry-css'
+import ImageModal from '../../components/ImageModal'
+import Layout from '../../components/Layout'
 
 const imageNames = [
-  "_FON4582",
-  "6tag_170616-100636",
-  "JQ-009",
-  "JQQ-024",
-  "QUASHIE - MAKOLA WOMAN-005(3)",
-];
+  '_FON4582',
+  '6tag_170616-100636',
+  'JQ-009',
+  'JQQ-024',
+  'QUASHIE - MAKOLA WOMAN-005(3)',
+]
 
 const Yellow = () => {
   const breakpointColumnsObj = {
     default: 3,
-  };
+  }
 
-  const [selectedImage, setSelectedImage] = useState(null);
+  const [selectedImage, setSelectedImage] = useState(null)
 
   const openModal = (imageName) => {
-    setSelectedImage(imageName);
-  };
+    setSelectedImage(imageName)
+  }
 
   const closeModal = () => {
-    setSelectedImage(null);
-  };
+    setSelectedImage(null)
+  }
 
   return (
     <Layout>
@@ -66,15 +66,15 @@ const Yellow = () => {
           question, “who am I?”
         </p>
         <div className="mt-6 text-gray-500">
-            <p className="font-bold text-black">The Approach</p>
-            <p className="text-gray-700">A workStream of 5 projects:</p>
-            <ul className="list-disc">
-                <li>Muntslag family research</li>
-                <li>Diaspora Art Project</li>
-                <li>My Family Tree research project</li>
-                <li>Keti Koti Symposium</li>
-                <li>Outreach and promotion</li>
-            </ul>
+          <p className="font-bold text-black">The Approach</p>
+          <p className="text-gray-700">A workStream of 5 projects:</p>
+          <ul className="list-disc">
+            <li>Muntslag family research</li>
+            <li>Diaspora Art Project</li>
+            <li>My Family Tree research project</li>
+            <li>Keti Koti Symposium</li>
+            <li>Outreach and promotion</li>
+          </ul>
         </div>
         <hr className="my-8" />
         <Masonry
@@ -89,7 +89,7 @@ const Yellow = () => {
                 key={item}
                 onClick={() => openModal(item)}
               >
-            <img
+                <img
                   src={`/Projects/Yellow is the Colour of Water/${item}.jpg`}
                   alt="artwork"
                   className=" w-full transition-all duration-150 group-hover:blur-[4px]"
@@ -98,7 +98,7 @@ const Yellow = () => {
                   {item}
                 </p>
               </div>
-            );
+            )
           })}
         </Masonry>
       </div>
@@ -109,7 +109,7 @@ const Yellow = () => {
         />
       )}
     </Layout>
-  );
-};
+  )
+}
 
-export default Yellow;
+export default Yellow

@@ -1,24 +1,24 @@
-import React, { useState } from "react";
-import Masonry from "react-masonry-css";
-import ImageModal from "../../Components/ImageModal";
-import Layout from "../../Components/Layout";
+import React, { useState } from 'react'
+import Masonry from 'react-masonry-css'
+import ImageModal from '../../components/ImageModal'
+import Layout from '../../components/Layout'
 
-const imageNames = ["DSC_7184", "DSCF2429(2)", "Jeremiah Quarshie(2)"];
+const imageNames = ['DSC_7184', 'DSCF2429(2)', 'Jeremiah Quarshie(2)']
 
 const Muses = () => {
   const breakpointColumnsObj = {
     default: 3,
-  };
+  }
 
-  const [selectedImage, setSelectedImage] = useState(null);
+  const [selectedImage, setSelectedImage] = useState(null)
 
   const openModal = (imageName) => {
-    setSelectedImage(imageName);
-  };
+    setSelectedImage(imageName)
+  }
 
   const closeModal = () => {
-    setSelectedImage(null);
-  };
+    setSelectedImage(null)
+  }
 
   return (
     <Layout>
@@ -44,7 +44,7 @@ const Muses = () => {
                   {item}
                 </p>
               </div>
-            );
+            )
           })}
         </Masonry>
       </div>
@@ -55,7 +55,7 @@ const Muses = () => {
         />
       )}
     </Layout>
-  );
-};
+  )
+}
 
-export default Muses;
+export default Muses

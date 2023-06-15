@@ -1,51 +1,55 @@
-import React, { useState } from "react";
-import Masonry from "react-masonry-css";
-import ImageModal from "../../Components/ImageModal";
-import Layout from "../../Components/Layout";
+import React, { useState } from 'react'
+import Masonry from 'react-masonry-css'
+import ImageModal from '../../components/ImageModal'
+import Layout from '../../components/Layout'
 
 const imageNames = [
-  "1 Daughters of Noah _ Photo by Oliver-Selim Boualam",
-  "01_Jeremiah Quarshie_Gray_Gray Gallery_2022_Photo by Oliver-Selim Boualam 2",
-  "2 Daughters of Noah _ Photo by Oliver-Selim Boualam",
-  "3 Daughters of Noah _ Photo by Oliver-Selim Boualam",
-  "4 Daughters of Noah _ Photo by Oliver-Selim Boualam",
-  "04_Jeremiah Quarshie_Gray_Gray Gallery_2022_Photo by Oliver-Selim Boualam 2",
-  "08_Jeremiah Quarshie_Gray_Gray Gallery_2022_Photo by Oliver-Selim Boualam",
-];
+  '1 Daughters of Noah _ Photo by Oliver-Selim Boualam',
+  '01_Jeremiah Quarshie_Gray_Gray Gallery_2022_Photo by Oliver-Selim Boualam 2',
+  '2 Daughters of Noah _ Photo by Oliver-Selim Boualam',
+  '3 Daughters of Noah _ Photo by Oliver-Selim Boualam',
+  '4 Daughters of Noah _ Photo by Oliver-Selim Boualam',
+  '04_Jeremiah Quarshie_Gray_Gray Gallery_2022_Photo by Oliver-Selim Boualam 2',
+  '08_Jeremiah Quarshie_Gray_Gray Gallery_2022_Photo by Oliver-Selim Boualam',
+]
 
 const Doh = () => {
   const breakpointColumnsObj = {
     default: 3,
     900: 2,
     600: 1,
-  };
+  }
 
-  const [selectedImage, setSelectedImage] = useState(null);
+  const [selectedImage, setSelectedImage] = useState(null)
 
   const openModal = (imageName) => {
-    setSelectedImage(imageName);
-  };
+    setSelectedImage(imageName)
+  }
 
   const closeModal = () => {
-    setSelectedImage(null);
-  };
+    setSelectedImage(null)
+  }
 
   return (
     <Layout>
       <div className="px-10 py-10 w-full mx-auto text-gray-500">
         <p className="text-justify indent-8">
-          “<span className="font-semibold italic text-black">Daughters of Noah</span> is an assemblage of portraits of women
-          on rectangle, square and round frames. The portraits include
-          traditional paintings and archival photographs collaged by way of
-          overlaying brightly coloured translucent paints. This exhibition blurs
-          the boundaries of reality and fiction by reimagining roles played by
-          women during colonial times as well as in the post-colonial epoch. The
-          exhibition takes a radical approach against the grain of objectifying
-          women&apos;s bodies by juxtaposing realistic renderings their facial
-          expressions against smooth backdrops of vibrant hues. The realistic
-          paintings in this exhibition challenge stereotypical perceptions of
-          women&apos;s roles across the globe by using nuances such as clothing
-          them in regal attires and reimagining them in positions of power.
+          “
+          <span className="font-semibold italic text-black">
+            Daughters of Noah
+          </span>{' '}
+          is an assemblage of portraits of women on rectangle, square and round
+          frames. The portraits include traditional paintings and archival
+          photographs collaged by way of overlaying brightly coloured
+          translucent paints. This exhibition blurs the boundaries of reality
+          and fiction by reimagining roles played by women during colonial times
+          as well as in the post-colonial epoch. The exhibition takes a radical
+          approach against the grain of objectifying women&apos;s bodies by
+          juxtaposing realistic renderings their facial expressions against
+          smooth backdrops of vibrant hues. The realistic paintings in this
+          exhibition challenge stereotypical perceptions of women&apos;s roles
+          across the globe by using nuances such as clothing them in regal
+          attires and reimagining them in positions of power.
           <br />
           <br />
           In this exhibition the artist draws his inspiration from both
@@ -83,7 +87,7 @@ const Doh = () => {
                   {item}
                 </p>
               </div>
-            );
+            )
           })}
         </Masonry>
       </div>
@@ -94,7 +98,7 @@ const Doh = () => {
         />
       )}
     </Layout>
-  );
-};
+  )
+}
 
-export default Doh;
+export default Doh

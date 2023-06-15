@@ -1,24 +1,24 @@
-import React, { useState } from "react";
-import Masonry from "react-masonry-css";
-import ImageModal from "../../Components/ImageModal";
-import Layout from "../../Components/Layout";
+import React, { useState } from 'react'
+import Masonry from 'react-masonry-css'
+import ImageModal from '../../components/ImageModal'
+import Layout from '../../components/Layout'
 
-const imageNames = ["2", "3", "IMG_7599","11","gfh"];
+const imageNames = ['2', '3', 'IMG_7599', '11', 'gfh']
 
 const Travel = () => {
   const breakpointColumnsObj = {
     default: 3,
-  };
+  }
 
-  const [selectedImage, setSelectedImage] = useState(null);
+  const [selectedImage, setSelectedImage] = useState(null)
 
   const openModal = (imageName) => {
-    setSelectedImage(imageName);
-  };
+    setSelectedImage(imageName)
+  }
 
   const closeModal = () => {
-    setSelectedImage(null);
-  };
+    setSelectedImage(null)
+  }
 
   return (
     <Layout>
@@ -79,14 +79,16 @@ const Travel = () => {
         </p>
         <br />
         <p className="text-gray-500">
-         <span className="text-black">Curators:</span> Jelle Bouwhuis and Kerstin Winking (Stedelijk Museum Bureau
-          Amsterdam) Kofi Setordji and Odile Tevie (Nubuke Foundation) Time,
-          Trade & Travel has been made possible in part by contributions from
-          the Mondrian Fund, the Amsterdam Fund for the Arts, HIVOS and SNS
-          REAAL Fund The exhibition is part of Project &lsquo;1975&rsquo; of
-          Stedelijk Museum Bureau Amsterdam.
+          <span className="text-black">Curators:</span> Jelle Bouwhuis and
+          Kerstin Winking (Stedelijk Museum Bureau Amsterdam) Kofi Setordji and
+          Odile Tevie (Nubuke Foundation) Time, Trade & Travel has been made
+          possible in part by contributions from the Mondrian Fund, the
+          Amsterdam Fund for the Arts, HIVOS and SNS REAAL Fund The exhibition
+          is part of Project &lsquo;1975&rsquo; of Stedelijk Museum Bureau
+          Amsterdam.
         </p>
-        <br /><br />
+        <br />
+        <br />
         <p className="text-gray-500">
           Bernard Akoi-Jackson, Dorothy Akpene Amenuke, Serge Clottey, Zachary
           Formwalt, Iris Kensmil, Aukje Koks, Navid Nuur, Jeremiah Quarshie,
@@ -116,7 +118,7 @@ const Travel = () => {
                   {item}
                 </p>
               </div>
-            );
+            )
           })}
         </Masonry>
       </div>
@@ -127,7 +129,7 @@ const Travel = () => {
         />
       )}
     </Layout>
-  );
-};
+  )
+}
 
-export default Travel;
+export default Travel
