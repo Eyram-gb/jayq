@@ -1,14 +1,14 @@
 import React, { Children } from 'react'
-import NavBar from './navBar'
-import { Quicksand } from "next/font/google";
+import NavBar from './NavBar'
+import { Quicksand } from 'next/font/google'
 
-const quicksand = Quicksand({ subsets: ["latin"] });
+const quicksand = Quicksand({ subsets: ['latin'] })
 
-const Layout = ({children}) => {
+const Layout = ({ children }) => {
   return (
     <div className={`${quicksand.className}`}>
-        <NavBar/>
-        <div>{children}</div>
+      <NavBar />
+      <div>{children}</div>
     </div>
   )
 }
