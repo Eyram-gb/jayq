@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Masonry from "react-masonry-css";
-import ImageModal from "../../Components/ImageModal";
-import Layout from "../../Components/Layout";
+import ImageModal from "../../components/ImageModal";
+import Layout from "../../components/Layout";
 
 const imageNames = ["2", "3", "IMG_7599","11","gfh"];
 

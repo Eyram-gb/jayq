@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { Quicksand } from "next/font/google";
-import Layout from "../Components/Layout";
+import Layout from "../components/Layout";
 import { Fade } from "react-slideshow-image";
 import "react-slideshow-image/dist/styles.css";
 

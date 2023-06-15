@@ -21,7 +21,7 @@
     "src/pages/exhibitions/material-insanity.jsx",
     "src/pages/portfolio/others.jsx",
     "src/pages/portfolio/paintings.jsx",
-    "src/anyname/Layout.jsx"
+    "src/components/Layout.jsx"
   ],
   "exclude": ["node_modules"]
 }

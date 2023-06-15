@@ -73,7 +73,7 @@ const NavBar = () => {
       onMouseLeave={handleDropdownClose}
     >
       <Link href="/">
-        <div className="flex flex-col text-lg">
+        <div className="flex flex-col text-2xl">
           <p className="font-bold tracking-wider uppercase">
             Jeremiah Quarshie
           </p>

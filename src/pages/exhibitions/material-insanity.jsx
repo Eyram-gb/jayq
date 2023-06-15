@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Masonry from "react-masonry-css";
-import ImageModal from "../../anyname/ImageModal";
-import Layout from "../../anyname/Layout";
+import ImageModal from "../../components/ImageModal";
+import Layout from "../../components/Layout";
 
 const imageNames = [
   "Macaal MATERIAL INSANITY- © Saad Alami",
@@ -28,14 +28,17 @@ const MaterialInsanity = () => {
     <Layout>
       <div className="px-10 py-10 w-full mx-auto text-gray-500">
         <div>
-          <h2 className="text-2xl font-bold text-black uppercase">Material Insanity</h2>
+          <h2 className="text-2xl font-bold text-black uppercase">
+            Material Insanity
+          </h2>
           <div className="my-4">
             <p>
-              <span className="text-black font-semibold">Curator:</span> Meriem Berrada &
-              Janine Dieudji, MACAAL
+              <span className="text-black font-semibold">Curator:</span> Meriem
+              Berrada & Janine Dieudji, MACAAL
             </p>
             <p>
-              <span className="text-black font-semibold">Scenography:</span> Zineb Andress Arraki
+              <span className="text-black font-semibold">Scenography:</span>{" "}
+              Zineb Andress Arraki
             </p>
           </div>
           <p className="mb-8">
