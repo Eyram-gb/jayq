@@ -47,7 +47,7 @@ const Paintings = () => {
 
   return (
     <Layout>
-      <div className="px-10 py-10">
+      <div className="px-8 md:px-10 py-10">
         <Masonry
           breakpointCols={breakpointColumnsObj}
           className="my-masonry-grid"
