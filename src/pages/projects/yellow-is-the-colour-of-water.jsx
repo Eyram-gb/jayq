@@ -29,7 +29,7 @@ const Yellow = () => {
   return (
     <Layout>
       <div className="px-10 py-10 w-full mx-auto">
-        <h2 className="uppercase text-2xl underline underline-offset-4 mb-4">
+        <h2 className="uppercase text-xl underline underline-offset-4 mb-4">
           Yellow is the Colour of Water
         </h2>
         <p className="text-gray-500 text-justify">

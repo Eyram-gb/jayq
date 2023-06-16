@@ -6,9 +6,9 @@ const quicksand = Quicksand({ subsets: ["latin"] });
 
 const Layout = ({ children }) => {
   return (
-    <div className={`${quicksand.className}`}>
+    <div className={`w-full ${quicksand.className}`}>
       <NavBar />
-      <div>{children}</div>
+      <div className="w-full">{children}</div>
       <footer className="w-full flex flex-col gap-y-2 items-center px-12 py-4">
         <p className="text-xs">
           &copy; {`${new Date().getFullYear()}`} Jeremiah Quarshie.
