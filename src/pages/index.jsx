@@ -24,7 +24,7 @@ export default function Home() {
           <Fade arrows={false} pauseOnHover={false}>
             {fadeImages.map((url, index) => (
               <div key={index} className="relative h-[90vh] w-full">
-                <img src={url} alt='artwork'className="w-full h-full"/>
+                <img src={url} alt='artwork'className="w-full h-full object-cover"/>
               </div>
             ))}
           </Fade>
