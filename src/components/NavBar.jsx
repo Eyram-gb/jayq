@@ -40,10 +40,10 @@ const navList = [
     name: "About",
     href: "/about",
   },
-  {
-    name: "Contact",
-    href: "/contact",
-  },
+  // {
+  //   name: "Contact",
+  //   href: "/contact",
+  // },
 ];
 
 const NavBar = () => {
@@ -71,6 +71,8 @@ const NavBar = () => {
     };
   }, []);
 
+  
+
   return (
     <nav
       className={`flex justify-between items-end px-4 realtive md:px-12 py-3 h-[10vh] border-b`}
@@ -80,7 +82,7 @@ const NavBar = () => {
           <Link href="/">Jeremiah Quarshie</Link>
         </p>
       </div>
-      <ul className="hidden md:flex gap-x-12">
+      <ul className="hidden md:flex gap-x-6">
         {navList.map((item, index) => {
           const isCurrentRoute = router.pathname === item.href;
           const isDropdownActive = activeDropdown === index;
@@ -144,6 +146,20 @@ const NavBar = () => {
           );
         })}
       </ul>
+      <div className="flex items-center gap-x-3">
+        <div className="">
+          <a
+            href="https://instagram.com/jeremiahquarshie"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <img src="/Subtract.svg" alt="ig" className="w-[18px]"></img>
+          </a>
+        </div>
+        <a href="mailto:jemkuash@yahoo.com">
+          <img src="/icons8-email-48.png" className="w-[22px]"></img>
+        </a>
+      </div>
       <div className="md:hidden">
         <div className="relative">
           <img
