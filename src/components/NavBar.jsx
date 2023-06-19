@@ -92,32 +92,42 @@ const NavBar = () => {
                 isCurrentRoute ? "underline font-semibold" : "hover:underline"
               } underline-offset-4 font-extralight text-sm`}
             >
-              <button
-                onClick={() => handleDropdownClick(index)}
-                className={`${
-                  isDropdownActive ? "underline font-semibold" : ""
-                } focus:outline-none flex items-center uppercase tracking-widest`}
-              >
-                {item.name}
-                {item.dropdownItems ? (
-                  <img
-                    src="/caret-down.svg"
-                    width="20"
-                    height="20"
-                    className={`transition-transform duration-200 transform ${
-                      isDropdownActive ? "rotate-180" : ""
-                    }`}
-                  ></img>
-                ) : (
-                  ""
-                )}
-                {/* <FontAwesomeIcon
+              {item.dropdownItems ? (
+                <button
+                  onClick={() => handleDropdownClick(index)}
+                  className={`${
+                    isDropdownActive ? "underline font-semibold" : ""
+                  } focus:outline-none flex items-center uppercase tracking-widest`}
+                >
+                  {item.name}
+                  {item.dropdownItems ? (
+                    <img
+                      src="/caret-down.svg"
+                      width="20"
+                      height="20"
+                      className={`transition-transform duration-200 transform ${
+                        isDropdownActive ? "rotate-180" : ""
+                      }`}
+                    ></img>
+                  ) : (
+                    ""
+                  )}
+                  {/* <FontAwesomeIcon
                   icon={faAngleDown}
                   className={`ml-1 transition-transform duration-200 transform ${
                     isDropdownActive ? "rotate-180" : ""
                   }`}
                 /> */}
-              </button>
+                </button>
+              ) : (
+                <button
+                  className={`${
+                    isDropdownActive ? "underline font-semibold" : ""
+                  } focus:outline-none flex items-center uppercase tracking-widest`}
+                >
+                  <Link href={item.href}>{item.name}</Link>
+                </button>
+              )}
               {item.dropdownItems && isDropdownActive && (
                 <ul
                   ref={dropdownRef}
