@@ -4,11 +4,11 @@ import ImageModal from "../../components/ImageModal";
 import Layout from "../../components/Layout";
 
 const imageNames = [
-  // "2",
+  "2",
  "3",
-  // "IMG_7599",
+  "IMG_7599",
   "11",
-  // "gfh"
+  "gfh"
 ];
 
 const Travel = () => {

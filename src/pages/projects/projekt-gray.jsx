@@ -23,7 +23,7 @@ const ProjektGray = () => {
   return (
     <Layout>
       <div className="px-10 py-10 w-full mx-auto">
-        <h2 className="text-2xl font-bold text-black uppercase">
+        <h2 className="text-2xl font-bold text-black uppercase pb-2">
           Projekt Gray
         </h2>
         <p className="text-gray-500 text-justify">

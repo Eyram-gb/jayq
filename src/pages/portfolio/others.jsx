@@ -6,7 +6,7 @@ import Layout from "../../components/Layout";
 const imageNames = [
   "32 muses _  Acrylic on Canvas _ 120cm by 160cm _  2013.",
   "Nelson Mandela _ Acrylic on Linen _ 101cm by 127cm _ 2011.",
-  // "IMG_2125",
+  "IMG_2125",
   "Oprah _ Acrylic on Canvas _ 80cm by 100cm _  2013.",
   "Michael Essien _ 2013 _ Acrylic on Canvas _ 80cm by 100cm",
   "This is Who I Am _ 2012 _ Acrylic on Canvas _ 112cm by 140cm.",

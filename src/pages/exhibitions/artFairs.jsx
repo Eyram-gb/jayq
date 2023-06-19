@@ -8,7 +8,7 @@ const imageNames = [
   "ART Karlsruhe _ 2023",
   "ArtX Lagos _ 2016",
   "ArtX Lagos _ 2019",
-  // "Positions Berlin _ 2022",
+  "Positions Berlin _ 2022",
 ];
 
 const ArtFairs = () => {
