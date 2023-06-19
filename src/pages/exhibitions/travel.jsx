@@ -3,7 +3,13 @@ import Masonry from "react-masonry-css";
 import ImageModal from "../../components/ImageModal";
 import Layout from "../../components/Layout";
 
-const imageNames = ["2", "3", "IMG_7599","11","gfh"];
+const imageNames = [
+  // "2",
+ "3",
+  // "IMG_7599",
+  "11",
+  // "gfh"
+];
 
 const Travel = () => {
   const breakpointColumnsObj = {
@@ -23,7 +29,7 @@ const Travel = () => {
   return (
     <Layout>
       <div className="px-10 py-10 w-full mx-auto">
-        <h2 className="text-2xl font-bold underline underline-offset-4 mb-3">
+        <h2 className="text-2xl font-bold uppercase mb-3">
           Time Trade and Travel
         </h2>
         <p className="text-justify text-gray-500">
@@ -79,20 +85,21 @@ const Travel = () => {
         </p>
         <br />
         <p className="text-gray-500">
-          <span className="text-black">Curators:</span> Jelle Bouwhuis and
-          Kerstin Winking (Stedelijk Museum Bureau Amsterdam) Kofi Setordji and
-          Odile Tevie (Nubuke Foundation) Time, Trade & Travel has been made
+          <span className="text-black font-bold">Curators:</span> Jelle Bouwhuis
+          and Kerstin Winking (Stedelijk Museum Bureau Amsterdam) Kofi Setordji
+          and Odile Tevie (Nubuke Foundation) Time, Trade & Travel has been made
           possible in part by contributions from the Mondrian Fund, the
           Amsterdam Fund for the Arts, HIVOS and SNS REAAL Fund The exhibition
           is part of Project &lsquo;1975&rsquo; of Stedelijk Museum Bureau
           Amsterdam.
         </p>
         <br />
-        <br />
-        <p className="text-gray-500">
+        <p className="text-xl font-semibold text-black">Exhibited Artists</p>
+        <p className="text-gray-500 uppercase">
           Bernard Akoi-Jackson, Dorothy Akpene Amenuke, Serge Clottey, Zachary
           Formwalt, Iris Kensmil, Aukje Koks, Navid Nuur, Jeremiah Quarshie,
           Karî&apos;kachä Seid&apos;ou and Katarina Zdjelar.
+          <br />
           <br />
           25 August - 21 October 2012
         </p>

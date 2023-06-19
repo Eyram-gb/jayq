@@ -87,7 +87,7 @@ const Yellow = () => {
           participation? Quarshie&apos;s evanescent occupation is cast as kind of
           shadow, or an echo, whose presence will reverberate from seams of
           cement, and in recollections of minds and materials that may recall
-          its traces. Robin Riskin Independent Curato
+          its traces. - Robin Riskin
         </p>
         {/* <div className="mt-6 text-gray-500">
           <p className="font-bold text-black">The Approach</p>

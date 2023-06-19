@@ -28,7 +28,7 @@ const SabiYuRutu = () => {
   return (
     <Layout>
       <div className="px-10 py-10 w-full mx-auto">
-        <h2 className="uppercase text-2xl underline underline-offset-4 mb-4">
+        <h2 className="text-2xl font-bold text-black uppercase">
           Sabi Yu Rutu
         </h2>
         <p className="text-gray-500 text-justify">
@@ -49,9 +49,9 @@ const SabiYuRutu = () => {
           Série A.
           <br />
           <br />
-           Throughout the world, most people are placed (or place
-          themselves) into broad and general categories of identity, often based
-          on nationality and a visible ethnicity. However, all of us have a far
+          Throughout the world, most people are placed (or place themselves)
+          into broad and general categories of identity, often based on
+          nationality and a visible ethnicity. However, all of us have a far
           more complex history and self-understanding that can and should be
           celebrated. For many Afro-Surinamese, whether living in Suriname, the
           Netherlands, or elsewhere, limited access to their cultural history

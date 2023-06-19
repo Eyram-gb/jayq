@@ -59,7 +59,7 @@ const Doh = () => {
           period and what constitutes their functions in the post-colonial
           epoch. He emphasizes the harmonies and tensions relating these two
           periods by putting into proximity women who lived across different
-          periods on the time spectrum.”
+          periods on the time spectrum.” - Gladys Kalichini
         </p>
         <hr className="my-8" />
         <Masonry

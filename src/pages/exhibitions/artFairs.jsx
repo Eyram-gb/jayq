@@ -3,7 +3,13 @@ import Masonry from "react-masonry-css";
 import ImageModal from "../../components/ImageModal";
 import Layout from "../../components/Layout";
 
-const imageNames = ["ART Karlsruhe 2022", "ArtX Lagos _ 2019"];
+const imageNames = [
+  "ART Karlsruhe _ 2022",
+  "ART Karlsruhe _ 2023",
+  "ArtX Lagos _ 2016",
+  "ArtX Lagos _ 2019",
+  // "Positions Berlin _ 2022",
+];
 
 const ArtFairs = () => {
   const breakpointColumnsObj = {
