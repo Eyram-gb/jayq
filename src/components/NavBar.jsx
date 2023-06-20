@@ -146,7 +146,7 @@ const NavBar = () => {
           );
         })}
       </ul>
-      <div className="flex items-center gap-x-3">
+      <div className="hidden md:flex items-center gap-x-3">
         <div className="">
           <a
             href="https://instagram.com/jeremiahquarshie"
@@ -185,32 +185,42 @@ const NavBar = () => {
                         : "hover:underline"
                     } underline-offset-4 font-extraligh text-sm`}
                   >
-                    <button
-                      onClick={() => handleDropdownClick(index)}
-                      className={`${
-                        isDropdownActive ? "underline font-semibold" : ""
-                      } focus:outline-none uppercase tracking-widest w-full flex justify-center items-center text-left text-center`}
-                    >
-                      {item.name}
-                      {item.dropdownItems ? (
-                        <img
-                          src="/caret-down.svg"
-                          width="20"
-                          height="20"
-                          className={`transition-transform duration-200 transform ${
-                            isDropdownActive ? "rotate-180" : ""
-                          }`}
-                        ></img>
-                      ) : (
-                        ""
-                      )}
-                      {/* <FontAwesomeIcon
+                    {item.dropdownItems ? (
+                      <button
+                        onClick={() => handleDropdownClick(index)}
+                        className={`${
+                          isDropdownActive ? "underline font-semibold" : ""
+                        } focus:outline-none uppercase tracking-widest w-full flex justify-center items-center text-left text-center`}
+                      >
+                        {item.name}
+                        {item.dropdownItems ? (
+                          <img
+                            src="/caret-down.svg"
+                            width="20"
+                            height="20"
+                            className={`transition-transform duration-200 transform ${
+                              isDropdownActive ? "rotate-180" : ""
+                            }`}
+                          ></img>
+                        ) : (
+                          ""
+                        )}
+                        {/* <FontAwesomeIcon
                   icon={faAngleDown}
                   className={`ml-1 transition-transform duration-200 transform ${
                     isDropdownActive ? "rotate-180" : ""
                   }`}
                 /> */}
-                    </button>
+                      </button>
+                    ) : (
+                      <button
+                        className={`${
+                          isDropdownActive ? "underline font-semibold" : ""
+                        } focus:outline-none uppercase tracking-widest w-full flex justify-center items-center text-left text-center`}
+                      >
+                        <Link href={item.href}>{item.name}</Link>
+                      </button>
+                    )}
                     {item.dropdownItems && isDropdownActive && (
                       <ul
                         ref={dropdownRef}

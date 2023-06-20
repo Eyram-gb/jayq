@@ -5,7 +5,7 @@ import Layout from "../../components/Layout";
 
 const imageNames = [
   "ART Karlsruhe _ 2022",
-  "ART Karlsruhe _ 2023",
+  "Art Karlsruhe _ 2023",
   "ArtX Lagos _ 2016",
   "ArtX Lagos _ 2019",
   "Positions Berlin _ 2022",
@@ -14,6 +14,7 @@ const imageNames = [
 const ArtFairs = () => {
   const breakpointColumnsObj = {
     default: 3,
+    600: 1,
   };
 
   const [selectedImage, setSelectedImage] = useState(null);
