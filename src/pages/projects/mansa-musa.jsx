@@ -8,6 +8,8 @@ const imageNames = ["musa 1", "YI4A1602", "YI4A1665", "YI4A2050", "YI4A2168"];
 const MansaMusa = () => {
   const breakpointColumnsObj = {
     default: 3,
+    700: 2,
+    600: 1,
   };
 
   const [selectedImage, setSelectedImage] = useState(null);
@@ -106,7 +108,7 @@ const MansaMusa = () => {
         </Masonry>
         <div className="mt-12 w-full">
           <iframe
-          className="w-full"
+            className="w-full"
             height="400"
             src="https://www.youtube.com/embed/Xd7ohUB4Zzg"
             title="Mansa Musa Project"
@@ -126,4 +128,4 @@ const MansaMusa = () => {
   );
 };
 
-export default MansaMusa
+export default MansaMusa;
