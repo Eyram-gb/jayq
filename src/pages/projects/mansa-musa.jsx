@@ -25,7 +25,10 @@ const MansaMusa = () => {
       <div className="px-10 py-10 w-full mx-auto">
         <div className="w-full mx-auto text-gray-500 pb-10">
           <h2 className="text-2xl font-bold text-black uppercase pb-2">
-            Mansa Musa - <span className="italic lowercase font-normal">the making of a royal portrait</span>
+            Mansa Musa -{" "}
+            <span className="italic lowercase font-normal">
+              the making of a royal portrait
+            </span>
           </h2>
           <p>
             The African continent has wallowed in the encapsulation of its his
@@ -101,6 +104,17 @@ const MansaMusa = () => {
             );
           })}
         </Masonry>
+        <div className="mt-12 w-full">
+          <iframe
+          className="w-full"
+            height="400"
+            src="https://www.youtube.com/embed/Xd7ohUB4Zzg"
+            title="Mansa Musa Project"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+        </div>
       </div>
       {selectedImage && (
         <ImageModal

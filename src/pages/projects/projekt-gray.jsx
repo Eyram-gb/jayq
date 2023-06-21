@@ -82,6 +82,17 @@ const ProjektGray = () => {
             );
           })}
         </Masonry>
+        <div className="mt-12">
+          <iframe
+          className="w-full"
+            height="400"
+            src="https://www.youtube.com/embed/wl20OnshWiU"
+            title="Gray Projekt"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+        </div>
       </div>
       {selectedImage && (
         <ImageModal
