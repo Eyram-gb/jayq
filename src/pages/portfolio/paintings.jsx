@@ -48,22 +48,18 @@ const Paintings = () => {
   return (
     <Layout>
       <div className="px-8 md:px-10 py-10">
-        <Masonry
-          breakpointCols={breakpointColumnsObj}
-          className="my-masonry-grid"
-          columnClassName="my-masonry-grid_column"
-        >
+        <div className="grid lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 md:grid-cols-2 grid-cols-1 w-full flex-wrap gap-4">
           {imageNames.map((item) => {
             return (
               <div
-                className="w-full group relative cursor-pointer"
+                className="h-[300px] group relative cursor-pointer overflow-hidden"
                 key={item}
                 onClick={() => openModal(item)}
               >
                 <img
                   src={`/Paintings/${item}.jpg`}
                   alt="artwork"
-                  className=" w-full transition-all duration-150 group-hover:blur-[4px]"
+                  className=" w-full transition-all lg:hover:scale-105 duration-150 object-cover h-full group-hover:blur-[4px]"
                 />
                 <p className="inset-center w-full px-3 text-center font-extralight text-white transition-all duration-100 group-hover:visible">
                   {item}
@@ -71,7 +67,7 @@ const Paintings = () => {
               </div>
             );
           })}
-        </Masonry>
+        </div>
       </div>
       {selectedImage && (
         <ImageModal
