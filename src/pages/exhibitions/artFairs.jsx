@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Masonry from "react-masonry-css";
 import ImageModal from "../../components/ImageModal";
 import Layout from "../../components/Layout";
+import Head from "next/head";
 
 const imageNames = [
   "ART Karlsruhe _ 2022",
@@ -28,6 +29,37 @@ const ArtFairs = () => {
   };
 
   return (
+    <>
+      <Head>
+        <title>Art Fairs</title>
+        <meta
+          name="description"
+          content="Art Fair exhibions by Jeremiah Quarshie"
+        />
+        <meta
+          name="keywords"
+          content="jeremiah quarshie, jerry, jayq, art, yellow is the colour of water, gallon, afrogallonisgm, kempinski, ghana, art in ghana, ghanaian artists, ghana artist, realism, painting, paintings, africa, artxlagos, artx, art fairs, exhibitions"
+        />
+        <link rel="icon" href="/favicon.ico" sizes="any" />
+        <link
+          rel="apple-touch-icon"
+          sizes="180x180"
+          href="/apple-touch-icon.png"
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="32x32"
+          href="/favicon-32x32.png"
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="16x16"
+          href="/favicon-16x16.png"
+        />
+        <link rel="manifest" href="/site.webmanifest"></link>
+      </Head>
     <Layout>
       <div className="px-10 py-10 flex justify-center w-full mx-auto">
         <Masonry
@@ -62,6 +94,7 @@ const ArtFairs = () => {
         />
       )}
     </Layout>
+    </>
   );
 };
 export default ArtFairs;
