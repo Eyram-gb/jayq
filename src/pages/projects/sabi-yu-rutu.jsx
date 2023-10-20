@@ -3,13 +3,7 @@ import Masonry from "react-masonry-css";
 import ImageModal from "../../components/ImageModal";
 import Layout from "../../components/Layout";
 import Head from "next/head";
-
-const imageNames = [
-  "1040157_10200596751055932_783215139_o",
-  "IMG_2122",
-  "IMG_2123",
-  "PhotoCrop_2013-11-30_07-31-13-PM",
-];
+import { sabiYuRutu } from "../../utils/images";
 
 const SabiYuRutu = () => {
   const breakpointColumnsObj = {
@@ -102,7 +96,7 @@ const SabiYuRutu = () => {
             className="my-masonry-grid"
             columnClassName="my-masonry-grid_column"
           >
-            {imageNames.map((item) => {
+            {sabiYuRutu.map((item) => {
               return (
                 <div
                   className="w-full group relative cursor-pointer"

@@ -2,9 +2,8 @@ import React, { useState } from "react";
 import Masonry from "react-masonry-css";
 import ImageModal from "../../components/ImageModal";
 import Layout from "../../components/Layout";
+import { mansaMusah } from "../../utils/images";
 import Head from "next/head";
-
-const imageNames = ["musa 1", "YI4A1602", "YI4A1665", "YI4A2050", "YI4A2168"];
 
 const MansaMusa = () => {
   const breakpointColumnsObj = {
@@ -121,7 +120,7 @@ const MansaMusa = () => {
             className="my-masonry-grid"
             columnClassName="my-masonry-grid_column"
           >
-            {imageNames.map((item) => {
+            {mansaMusah.map((item) => {
               return (
                 <div
                   className="w-full group relative cursor-pointer"
