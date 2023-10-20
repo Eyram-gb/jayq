@@ -22,6 +22,6 @@
     "src/pages/portfolio/others.jsx",
     "src/pages/portfolio/paintings.jsx",
     "src/components/Layout.jsx"
-  ],
+, "src/components/ImageModalCarousel.jsx"  ],
   "exclude": ["node_modules"]
 }

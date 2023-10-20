@@ -4,6 +4,10 @@ import { useRouter } from "next/router";
 
 const navList = [
   {
+    name: "About",
+    href: "/about",
+  },
+  {
     name: "Portfolio",
     href: "/portfolio",
     dropdownItems: [
@@ -35,10 +39,6 @@ const navList = [
         href: "/projects/yellow-is-the-colour-of-water",
       },
     ],
-  },
-  {
-    name: "About",
-    href: "/about",
   },
   // {
   //   name: "Contact",
