@@ -22,7 +22,7 @@ const Test = () => {
           </div>
           <img
             src="/Paintings/Ama Asantewa _ Acrylic on canvas _ 120cm by 150cm _ 2022.jpg"
-            className="md:max-w-fit md:max-h-[80vh] w-auto"
+            className="md:max-w-fit md:max-h-[80vh]"
           />
           <p className="">Legend 1</p>
         </div>
@@ -33,7 +33,7 @@ const Test = () => {
           </div>
           <img
             src="/Paintings/Queen no.2 _ Acrylic on canvas _ 91cm by 182cm _ 2018.jpg"
-            className="md:max-w-fit md:max-h-[80vh] w-auto"
+            className="md:max-w-fit md:max-h-[80vh]"
           />
           <p className="">Legend 2</p>
         </div>
@@ -44,7 +44,7 @@ const Test = () => {
           </div>
           <img
             src="/Paintings/Couch Potato1 _ Acrylic on canvas _ 180cm by 100cm _ 2022.jpg"
-            className="md:max-w-fit md:max-h-[80vh] w-auto "
+            className="md:max-w-fit md:max-h-[80vh]"
           />
           <p className="">Legend 3</p>
         </div>
