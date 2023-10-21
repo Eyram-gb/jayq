@@ -1,9 +1,10 @@
 import Masonry from "react-masonry-css";
 import Layout from "../../components/Layout";
 import { useState } from "react";
-import { paintings } from "../../utils/images";
+import { paintings } from "../../lib/images";
 import ImageModal from "../../components/ImageModal";
 import Head from "next/head";
+import ImageModalCarousel from "../../components/ImageModalCarousel";
 
 const Paintings = () => {
   const breakpointColumnsObj = {
@@ -14,6 +15,7 @@ const Paintings = () => {
   };
 
   const [selectedImage, setSelectedImage] = useState(null);
+  const [selectedIndex, setSelectedIndex] = useState(0);
 
   const openModal = (imageName) => {
     setSelectedImage(imageName);
@@ -85,12 +87,15 @@ const Paintings = () => {
       <Layout>
         <div className="px-8 md:px-10 py-10">
           <div className="grid lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 md:grid-cols-2 grid-cols-1 w-full flex-wrap gap-4">
-            {paintings.map((item) => {
+            {paintings.map((item, index) => {
               return (
                 <div
                   className="h-[300px] group relative cursor-pointer overflow-hidden"
                   key={item}
-                  onClick={() => openModal(item)}
+                  onClick={() => {
+                    openModal(item); 
+                    setSelectedIndex(index)
+                  }}
                 >
                   <img
                     src={`/Paintings/${item}.jpg`}
@@ -105,9 +110,16 @@ const Paintings = () => {
             })}
           </div>
         </div>
-        {selectedImage && (
+        {/* {selectedImage && (
           <ImageModal
             imageUrl={`/Paintings/${selectedImage}.jpg`}
+            onClose={closeModal}
+          />
+        )} */}
+        {selectedImage && (
+          <ImageModalCarousel
+            images={paintings}
+            selectedIndex={selectedIndex}
             onClose={closeModal}
           />
         )}

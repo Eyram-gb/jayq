@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Masonry from "react-masonry-css";
 import ImageModal from "../../components/ImageModal";
-import { others } from "../../utils/images";
+import { others } from "../../lib/images";
 import Layout from "../../components/Layout";
 import Head from "next/head";
 
@@ -27,10 +27,7 @@ const Others = () => {
     <>
       <Head>
         <title>Other Arts</title>
-        <meta
-          name="description"
-          content="Other Arts"
-        />
+        <meta name="description" content="Other Arts" />
         <meta
           name="keywords"
           content="jeremiah quarshie, jerry, jayq, art, yellow is the colour of water, gallon, afrogallonisgm, kempinski, ghana, art in ghana, ghanaian artists, ghana artist, realism, painting, paintings, africa, artxlagos, artx other Arts, creative arts, art collections, art exhibitions"
