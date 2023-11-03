@@ -6,7 +6,7 @@ import ImageModal from "../../components/ImageModal";
 import Head from "next/head";
 import ImageModalCarousel from "../../components/ImageModalCarousel";
 
-const Paintings = () => {
+const Artworks = () => {
   const breakpointColumnsObj = {
     default: 4,
     1100: 3,
@@ -128,4 +128,4 @@ const Paintings = () => {
   );
 };
 
-export default Paintings;
+export default Artworks;

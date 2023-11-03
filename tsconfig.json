@@ -20,7 +20,7 @@
     "**/*.tsx",
     "src/pages/exhibitions/material-insanity.jsx",
     "src/pages/portfolio/others.jsx",
-    "src/pages/portfolio/paintings.jsx",
+    "src/pages/portfolio/artworks.jsx",
     "src/components/Layout.jsx"
 , "src/components/ImageModalCarousel.jsx"  ],
   "exclude": ["node_modules"]

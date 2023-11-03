@@ -13,7 +13,7 @@ const Layout = ({ children }) => {
         <p className="text-xs">
           &copy; {`${new Date().getFullYear()}`} Jeremiah Quarshie.
         </p>
-        <div className="flex items-center gap-x-3">
+        {/* <div className="flex items-center gap-x-3">
           <div className="">
             <a
               href="https://instagram.com/jeremiahquarshie"
@@ -26,7 +26,7 @@ const Layout = ({ children }) => {
           <a href="mailto:jemkuash@yahoo.com">
             <img src="/icons8-email-48.png" className="w-[22px]"></img>
           </a>
-        </div>
+        </div> */}
       </footer>
     </div>
   );
