@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Masonry from "react-masonry-css";
 import ImageModal from "../../components/ImageModal";
 import Layout from "../../components/Layout";
-import { digital } from "../../utils/images";
+import { digital } from "../../lib/images";
 import Head from "next/head";
 
 const Digital = () => {

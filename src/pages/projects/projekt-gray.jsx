@@ -3,7 +3,7 @@ import Masonry from "react-masonry-css";
 import ImageModal from "../../components/ImageModal";
 import Layout from "../../components/Layout";
 import Head from "next/head";
-import { projektGray } from "../../utils/images";
+import { projektGray } from "../../lib/images";
 
 const ProjektGray = () => {
   const breakpointColumnsObj = {

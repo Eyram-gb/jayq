@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Masonry from "react-masonry-css";
 import ImageModal from "../../components/ImageModal";
 import Layout from "../../components/Layout";
-import { mansaMusah } from "../../utils/images";
+import { mansaMusah } from "../../lib/images";
 import Head from "next/head";
 
 const MansaMusa = () => {

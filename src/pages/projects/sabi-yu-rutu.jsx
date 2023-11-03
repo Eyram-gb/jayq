@@ -3,7 +3,7 @@ import Masonry from "react-masonry-css";
 import ImageModal from "../../components/ImageModal";
 import Layout from "../../components/Layout";
 import Head from "next/head";
-import { sabiYuRutu } from "../../utils/images";
+import { sabiYuRutu } from "../../lib/images";
 
 const SabiYuRutu = () => {
   const breakpointColumnsObj = {

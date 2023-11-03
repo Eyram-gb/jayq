@@ -3,7 +3,7 @@ import Masonry from "react-masonry-css";
 import ImageModal from "../../components/ImageModal";
 import Layout from "../../components/Layout";
 import Head from "next/head";
-import { yellow } from "../../utils/images";
+import { yellow } from "../../lib/images";
 
 const Yellow = () => {
   const breakpointColumnsObj = {
