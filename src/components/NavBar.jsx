@@ -12,13 +12,13 @@ const navList = [
     href: "/about",
   },
   {
-    name: "Portfolio",
-    href: "/portfolio",
-    dropdownItems: [
-      { name: "Artworks", href: "/portfolio/artworks" },
-      // { name: "Others", href: "/portfolio/others" },
-      // { name: "Digital", href: "/portfolio/digital" },
-    ],
+    name: "Artworks",
+    href: "/artworks",
+    // dropdownItems: [
+    //   { name: "Artworks", href: "/portfolio/artworks" },
+    //   // { name: "Others", href: "/portfolio/others" },
+    //   // { name: "Digital", href: "/portfolio/digital" },
+    // ],
   },
   // {
   //   name: "Exhibitions",

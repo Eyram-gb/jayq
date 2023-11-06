@@ -6,7 +6,7 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 const ImageModalCarousel = ({ images, selectedIndex, onClose }) => {
   return (
-    <div className="fixed inset-0 flex items-center justify-center z-50">
+    <div className="fixed inset-0 flex items-center justify-center z-50 bg-white">
       <div className="relative z-[999] md:bg-white">
         <Carousel
           dynamicHeight={false}
@@ -15,9 +15,10 @@ const ImageModalCarousel = ({ images, selectedIndex, onClose }) => {
           showThumbs={false}
           selectedItem={selectedIndex}
           swipeable={true}
+          // centerMode={true}
           emulateTouch={true}
           useKeyboardArrows={true}
-          className="max-w-[100vw] md:max-w-[80vw] max-h-[100vh]  md:h-fit mx-auto"
+          className="max-w-[100vw] md:max-w-[80vw] md:max-h-[100vh] h-fit mx-auto"
           renderArrowPrev={(clickHandler, hasPrev, labelPrev) =>
             hasPrev && (
               <button
@@ -50,7 +51,7 @@ const ImageModalCarousel = ({ images, selectedIndex, onClose }) => {
           {images.map((painting, index) => {
             return (
               <div key={index} className="">
-                <div className="px-4 py-2 flex gap-x-4 items-center bg-white">
+                {/* <div className="px-4 py-2 flex gap-x-4 items-center bg-white">
                   <div className="flex gap-x-1 items-center">
                     <p className="text-[14px]">Available For Printing</p>
                     <div className="p-0.5 rounded-full bg-teal-200 w-3 h-3">
@@ -64,15 +65,17 @@ const ImageModalCarousel = ({ images, selectedIndex, onClose }) => {
                   <button className="text-white px-3 py-1 w-32 text-xs bg-teal-300">
                     Purchase Artwork
                   </button>
-                </div>
-                <div>
+                </div> */}
+                <div className="my-auto flex flex-col justify-center items-center h-[100vh]">
                   <img
                     src={`/Paintings/${painting}.jpg`}
                     alt={painting}
-                    className="md:max-w-fit md:h-[75vh] h-fit"
+                    fill
+                    className="max-w-fit md:h-[75vh]"
                   />
-                </div>
                 <h2 className="bg-white p-2">{painting}</h2>
+                {/* <h2 className="legend">{painting}</h2> */}
+                </div>
               </div>
             );
           })}
@@ -85,10 +88,10 @@ const ImageModalCarousel = ({ images, selectedIndex, onClose }) => {
       >
         <img src="https://s2.svgbox.net/materialui.svg?ic=close" alt="close" />
       </button>
-      <div
+      {/* <div
         className="absolute inset-0 bg-black opacity-70 z-20"
         onClick={onClose}
-      ></div>
+      ></div> */}
     </div>
   );
 };
