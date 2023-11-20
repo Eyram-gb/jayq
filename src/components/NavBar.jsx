@@ -44,10 +44,10 @@ const navList = [
       },
     ],
   },
-  // {
-  //   name: "Contact",
-  //   href: "/contact",
-  // },
+  {
+    name: "Contact",
+    href: "/contact",
+  },
 ];
 
 const NavBar = () => {
