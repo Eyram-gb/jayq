@@ -50,7 +50,7 @@ export default function Home() {
         <link rel="manifest" href="/site.webmanifest"></link>
       </Head>
       <Layout>
-        <div className={`w-full p-0 ${quicksand.className}`}>
+        <div className={`w-full p-0`}>
           <div className=" px-4 pt-4 md:px-12 w-full">
             <Fade arrows={false} pauseOnHover={false}>
               {fadeImages.map((url, index) => (
