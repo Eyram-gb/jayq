@@ -174,7 +174,7 @@ const NavBar = () => {
           ></img>
         </div>
         {showMobileMenu && (
-          <div className="absolute left-0 z-[10] w-[100vw] h-[50vh] p-8 bg-white shadow-md">
+          <div className="absolute left-0 z-[10] w-[100vw] h-screen p-8 bg-white shadow-md">
             <ul className="space-y-8 w-full">
               {navList.map((item, index) => {
                 const isCurrentRoute = router.pathname === item.href;
