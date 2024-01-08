@@ -51,8 +51,8 @@ export default function Home() {
       </Head>
       <Layout>
         <div className={`w-full p-0`}>
-          <div className=" px-4 pt-4 md:px-12 w-full">
-            <Fade arrows={false} pauseOnHover={false}>
+          <div className="w-full">
+            {/* <Fade arrows={false} pauseOnHover={false}>
               {fadeImages.map((url, index) => (
                 <div key={index} className="relative h-[90vh] w-full">
                   <img
@@ -62,7 +62,10 @@ export default function Home() {
                   />
                 </div>
               ))}
-            </Fade>
+            </Fade> */}
+            <div className="h-[95vh] w-full relative">
+              <Image src="/Home/IMG_6425.JPG" alt="home" fill  className="object-cover" />
+            </div>
           </div>
         </div>
       </Layout>
