@@ -64,7 +64,7 @@ export default function Home() {
               ))}
             </Fade> */}
             <div className="h-[95vh] w-full relative">
-              <Image src="/Home/IMG_6425.JPG" alt="home" fill  className="object-cover" />
+              <Image src="/Home/IMG_6425.JPG" alt="home" fill  className="object-cover object-left md:object-center" />
             </div>
           </div>
         </div>
