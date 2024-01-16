@@ -67,11 +67,13 @@ const Artworks = () => {
                     setSelectedIndex(index);
                   }}
                 >
-                  <img
-                    src={`/Paintings/${item}.jpg`}
-                    alt="artwork"
-                    className=" w-full transition-all lg:hover:scale-105 duration-500 object-cover h-full group-hover:blur-[4px]"
-                  />
+                  <div>
+                    <img
+                      src={`/Paintings/${item}.jpg`}
+                      alt="artwork"
+                      className=" w-full transition-all lg:hover:scale-105 duration-500 object-cover h-full group-hover:blur-[4px]"
+                    />
+                  </div>
                   <p className="inset-center w-full px-3 text-center font-extralight text-white transition-all duration-100 group-hover:visible">
                     {item}
                   </p>
