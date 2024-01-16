@@ -26,7 +26,7 @@ const ImageModal = ({ imageUrl, onClose }) => {
         </button>
       </div>
       <div
-        className="absolute inset-0 z-40 bg-black opacity-70 z-20"
+        className="absolute inset-0 bg-black opacity-70 z-20"
         onClick={onClose}
       ></div>
     </div>

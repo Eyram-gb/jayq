@@ -1,18 +1,9 @@
 import React, { useState } from "react";
 import Masonry from "react-masonry-css";
 import ImageModal from "../../components/ImageModal";
+import { others } from "../../lib/images";
 import Layout from "../../components/Layout";
 import Head from "next/head";
-
-const imageNames = [
-  "32 muses _  Acrylic on Canvas _ 120cm by 160cm _  2013.",
-  "Nelson Mandela _ Acrylic on Linen _ 101cm by 127cm _ 2011.",
-  "Kevin Prince Boateng _ 2022 _ Acrylic on canvas _ 120cm by 160cm",
-  "Oprah _ Acrylic on Canvas _ 80cm by 100cm _  2013.",
-  "Michael Essien _ 2013 _ Acrylic on Canvas _ 80cm by 100cm",
-  "This is Who I Am _ 2012 _ Acrylic on Canvas _ 112cm by 140cm.",
-  "Shulammite _ Acrylic on Canvas _ 80cm by 100cm _ 2010.",
-];
 
 const Others = () => {
   const breakpointColumnsObj = {
@@ -36,10 +27,7 @@ const Others = () => {
     <>
       <Head>
         <title>Other Arts</title>
-        <meta
-          name="description"
-          content="Other Arts"
-        />
+        <meta name="description" content="Other Arts" />
         <meta
           name="keywords"
           content="jeremiah quarshie, jerry, jayq, art, yellow is the colour of water, gallon, afrogallonisgm, kempinski, ghana, art in ghana, ghanaian artists, ghana artist, realism, painting, paintings, africa, artxlagos, artx other Arts, creative arts, art collections, art exhibitions"
@@ -67,7 +55,7 @@ const Others = () => {
       <Layout>
         <div className="px-8 md:px-10 py-10">
           <div className="grid lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 md:grid-cols-2 grid-cols-1 w-full flex-wrap gap-4">
-            {imageNames.map((item) => {
+            {others.map((item) => {
               return (
                 <div
                   className="h-[300px] group relative cursor-pointer overflow-hidden"

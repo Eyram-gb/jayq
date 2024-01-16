@@ -40,12 +40,12 @@ const About = () => {
       </Head>
       <Layout>
         <div className="text-gray-500 px-6 md:px-12">
-          <div className="w-full md:w-2/3 mx-auto mt-8">
+          {/* <div className="w-full md:w-2/3 mx-auto mt-8">
             <img src="/about.jpg" alt="JQ" className="w-full object-cover" />
           </div>
-          <hr className="my-8" />
-          <p className="mb-8 indent-8 text-justify">
-            <span className="italic font-semibold">Jeremiah Quarshie</span> was
+          <hr className="my-8" /> */}
+          <p className="my-8 text-justify">
+          Jeremiah Quarshie was
             born in Accra, Ghana. He lives and works in Karlsruhe, Germany.
             Quarshie obtained a Bachelor of Fine Arts degree from the Kwame
             Nkrumah University of Science and Technology, KNUST, Kumasi, Ghana

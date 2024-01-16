@@ -4,25 +4,33 @@ import { useRouter } from "next/router";
 
 const navList = [
   {
-    name: "Portfolio",
-    href: "/portfolio",
-    dropdownItems: [
-      { name: "Paintings", href: "/portfolio/paintings" },
-      { name: "Others", href: "/portfolio/others" },
-      { name: "Digital", href: "/portfolio/digital" },
-    ],
+    name: "Home",
+    href: "/",
   },
   {
-    name: "Exhibitions",
-    href: "/exhibitions",
-    dropdownItems: [
-      { name: "Art Fairs", href: "/exhibitions/artFairs" },
-      { name: "Daughters of Noah", href: "/exhibitions/daughters-of-noah" },
-      { name: "Muses", href: "/exhibitions/muses" },
-      { name: "Material Insanity", href: "/exhibitions/material-insanity" },
-      { name: "Time trade and Travel", href: "/exhibitions/travel" },
-    ],
+    name: "About",
+    href: "/about",
   },
+  {
+    name: "Artworks",
+    href: "/artworks",
+    // dropdownItems: [
+    //   { name: "Artworks", href: "/portfolio/artworks" },
+    //   // { name: "Others", href: "/portfolio/others" },
+    //   // { name: "Digital", href: "/portfolio/digital" },
+    // ],
+  },
+  // {
+  //   name: "Exhibitions",
+  //   href: "/exhibitions",
+  //   dropdownItems: [
+  //     { name: "Art Fairs", href: "/exhibitions/artFairs" },
+  //     { name: "Daughters of Noah", href: "/exhibitions/daughters-of-noah" },
+  //     { name: "Muses", href: "/exhibitions/muses" },
+  //     { name: "Material Insanity", href: "/exhibitions/material-insanity" },
+  //     { name: "Time trade and Travel", href: "/exhibitions/travel" },
+  //   ],
+  // },
   {
     name: "Projects",
     href: "/projects",
@@ -37,13 +45,9 @@ const navList = [
     ],
   },
   {
-    name: "About",
-    href: "/about",
+    name: "Contact",
+    href: "/contact",
   },
-  // {
-  //   name: "Contact",
-  //   href: "/contact",
-  // },
 ];
 
 const NavBar = () => {
@@ -146,7 +150,7 @@ const NavBar = () => {
           );
         })}
       </ul>
-      <div className="hidden md:flex items-center gap-x-3">
+      {/* <div className="hidden md:flex items-center gap-x-3">
         <div className="">
           <a
             href="https://instagram.com/jeremiahquarshie"
@@ -159,7 +163,7 @@ const NavBar = () => {
         <a href="mailto:jemkuash@yahoo.com">
           <img src="/icons8-email-48.png" className="w-[22px]"></img>
         </a>
-      </div>
+      </div> */}
       <div className="md:hidden">
         <div className="relative">
           <img
@@ -170,7 +174,7 @@ const NavBar = () => {
           ></img>
         </div>
         {showMobileMenu && (
-          <div className="absolute left-0 z-[10] w-[100vw] h-[50vh] p-8 bg-white shadow-md">
+          <div className="absolute left-0 z-[10] w-[100vw] h-screen p-8 bg-white shadow-md">
             <ul className="space-y-8 w-full">
               {navList.map((item, index) => {
                 const isCurrentRoute = router.pathname === item.href;
