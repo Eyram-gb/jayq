@@ -63,8 +63,13 @@ export default function Home() {
                 </div>
               ))}
             </Fade> */}
-            <div className="h-[95vh] w-full relative">
-              <Image src="/Home/IMG_6425.JPG" alt="home" fill  className="object-cover object-left md:object-center" />
+            <div className="h-[95vh] w-full relative my-6">
+              <Image
+                src="/Paintings/Shooter_ Yellow is the Colour of Water series _ Acrylic on canvas _ 152cm by 121cm _ 2015.JPG"
+                alt="home"
+                fill
+                className="object-contain md:object-center"
+              />
             </div>
           </div>
         </div>

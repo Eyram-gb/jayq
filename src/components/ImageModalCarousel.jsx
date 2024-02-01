@@ -71,7 +71,7 @@ const ImageModalCarousel = ({ images, selectedIndex, onClose }) => {
                     src={`/Paintings/${painting}.jpg`}
                     alt={painting}
                     fill
-                    className="max-w-fit md:h-[75vh] block"
+                    className="max-w-fit w-auto md:h-[75vh] block"
                   />
                   <h2 className="bg-white p-2">{painting}</h2>
                 </div>

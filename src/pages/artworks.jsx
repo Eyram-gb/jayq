@@ -67,7 +67,7 @@ const Artworks = () => {
                     setSelectedIndex(index);
                   }}
                 >
-                  <div>
+                  <div className="h-full">
                     <img
                       src={`/Paintings/${item}.jpg`}
                       alt="artwork"

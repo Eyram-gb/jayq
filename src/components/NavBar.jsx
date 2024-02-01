@@ -36,7 +36,7 @@ const navList = [
     href: "/projects",
     dropdownItems: [
       { name: "Mansa Musa Project", href: "/projects/mansa-musa" },
-      { name: "Projekt Gray", href: "/projects/projekt-gray" },
+      // { name: "Projekt Gray", href: "/projects/projekt-gray" },
       { name: "Sabi Yu Rutu", href: "/projects/sabi-yu-rutu" },
       {
         name: "Yellow is the Colour of Water",
