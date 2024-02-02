@@ -63,9 +63,9 @@ export default function Home() {
                 </div>
               ))}
             </Fade> */}
-            <div className="h-[95vh] w-full relative my-6">
+            <div className="h-[95vh] w-full relative my-8">
               <Image
-                src="/Paintings/Shooter_ Yellow is the Colour of Water series _ Acrylic on canvas _ 152cm by 121cm _ 2015.JPG"
+                src="/Paintings/Shooter_ Yellow is the Colour of Water series _ Acrylic on canvas _ 152cm by 121cm _ 2015.jpg"
                 alt="home"
                 fill
                 className="object-contain md:object-center"
