@@ -35,19 +35,19 @@ const navList = [
     name: "Projects",
     href: "/projects",
     dropdownItems: [
-      { name: "Mansa Musa Project", href: "/projects/mansa-musa" },
+      // { name: "Mansa Musa Project", href: "/projects/mansa-musa" },
       // { name: "Projekt Gray", href: "/projects/projekt-gray" },
-      { name: "Sabi Yu Rutu", href: "/projects/sabi-yu-rutu" },
+      // { name: "Sabi Yu Rutu", href: "/projects/sabi-yu-rutu" },
       {
         name: "Yellow is the Colour of Water",
         href: "/projects/yellow-is-the-colour-of-water",
       },
     ],
   },
-  {
-    name: "Contact",
-    href: "/contact",
-  },
+  // {
+  //   name: "Contact",
+  //   href: "/contact",
+  // },
 ];
 
 const NavBar = () => {
