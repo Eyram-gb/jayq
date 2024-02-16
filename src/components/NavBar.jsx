@@ -75,8 +75,6 @@ const NavBar = () => {
     };
   }, []);
 
-  
-
   return (
     <nav
       className={`flex justify-between items-end px-4 realtive md:px-12 py-3 h-[10vh] border-b`}
@@ -137,7 +135,7 @@ const NavBar = () => {
               {item.dropdownItems && isDropdownActive && (
                 <ul
                   ref={dropdownRef}
-                  className="absolute top-full z-10 -left-4 mt-2 py-1 bg-white shadow-md rounded-md uppercase whitespace-nowrap"
+                  className="absolute top-full z-10 -left-36 mt-2 py-1 bg-white shadow-md rounded-md uppercase whitespace-nowrap"
                 >
                   {item.dropdownItems.map((dropdownItem) => (
                     <li key={dropdownItem.name} className="px-4 py-2">
