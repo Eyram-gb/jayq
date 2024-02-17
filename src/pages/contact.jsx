@@ -2,6 +2,7 @@ import React from "react";
 import { useState } from "react";
 import emailjs from "@emailjs/browser";
 import Layout from "../components/Layout";
+import NavBar from "../components/NavBar";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -40,19 +41,17 @@ const Contact = () => {
   };
 
   return (
-    <Layout>
+    <>
+      <NavBar />
       <p className="text-center text-xs mt-10 mb-8">
-        Gallery Elle (Zurich, St Moritz){" "}
-        <span>
-          <a
-            href="mailto:atossa@galleryelle.com"
-            className="hover:text-blue-400"
-          >
-            atossa@galleryelle.com
-          </a>
-        </span>
+        Gallery Elle (Zurich, St Moritz)
       </p>
-      <form onSubmit={sendEmail} className=" px-4">
+      <h3 className="text-3xl text-center">
+        <a href="mailto:atossa@galleryelle.com" className="text-gray-500">
+          atossa@galleryelle.com
+        </a>
+      </h3>
+      {/* <form onSubmit={sendEmail} className=" px-4">
         <div className="max-w-lg flex flex-col justify-center items-center mx-auto space-y-4">
           <div className="w-full">
             <label className="mr-auto">Name</label>
@@ -99,8 +98,8 @@ const Contact = () => {
             className="mx-auto mt- bg-emerald-400 text-white rounded-md py-2 px-3 w-full"
           />
         </div>
-      </form>
-    </Layout>
+      </form> */}
+    </>
   );
 };
 

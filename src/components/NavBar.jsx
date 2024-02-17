@@ -14,11 +14,14 @@ const navList = [
   {
     name: "Artworks",
     href: "/artworks",
-    // dropdownItems: [
-    //   { name: "Artworks", href: "/portfolio/artworks" },
-    //   // { name: "Others", href: "/portfolio/others" },
-    //   // { name: "Digital", href: "/portfolio/digital" },
-    // ],
+    dropdownItems: [
+      {
+        name: "Yellow is the Colour of Water",
+        href: "/projects/yellow-is-the-colour-of-water",
+      },
+      // { name: "Others", href: "/portfolio/others" },
+      // { name: "Digital", href: "/portfolio/digital" },
+    ],
   },
   // {
   //   name: "Exhibitions",
@@ -31,23 +34,23 @@ const navList = [
   //     { name: "Time trade and Travel", href: "/exhibitions/travel" },
   //   ],
   // },
-  {
-    name: "Projects",
-    href: "/projects",
-    dropdownItems: [
-      // { name: "Mansa Musa Project", href: "/projects/mansa-musa" },
-      // { name: "Projekt Gray", href: "/projects/projekt-gray" },
-      // { name: "Sabi Yu Rutu", href: "/projects/sabi-yu-rutu" },
-      {
-        name: "Yellow is the Colour of Water",
-        href: "/projects/yellow-is-the-colour-of-water",
-      },
-    ],
-  },
   // {
-  //   name: "Contact",
-  //   href: "/contact",
+  //   name: "Projects",
+  //   href: "/projects",
+  //   dropdownItems: [
+  //     // { name: "Mansa Musa Project", href: "/projects/mansa-musa" },
+  //     // { name: "Projekt Gray", href: "/projects/projekt-gray" },
+  //     // { name: "Sabi Yu Rutu", href: "/projects/sabi-yu-rutu" },
+  //     {
+  //       name: "Yellow is the Colour of Water",
+  //       href: "/projects/yellow-is-the-colour-of-water",
+  //     },
+  //   ],
   // },
+  {
+    name: "Contact",
+    href: "/contact",
+  },
 ];
 
 const NavBar = () => {
